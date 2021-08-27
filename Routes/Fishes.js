@@ -1,32 +1,20 @@
 import express from 'express';
+import {v4 as uuidv4} from 'uuid';
 
 const router = express.Router();
 
 const fishes =[
-    {
-        Id: 0,
-        type: "Pike",
-        length: "110cm",
-        weight: "10,5kg"
-    },
-    {
-        Id: 1,
-        type: "Perch",
-        length: "48cm",
-        weight: "1,5kg"
-    }
+    
 ]
 
 router.get('/', (req, res) => {
-    console.log(fishes);
-    
     res.send(fishes);
 })
 
-router.post('/', (req, res)=> {
-    console.log('Post Route reached');
-
-    res.send('Post Route reached');
+router.post('/', (req, res)=> {    
+    const fish = req.body;
+    fishes.push({ id: uuidv4(),...fish })
+    res.send(`Fish of type: ${fish.type} added to database.`)
 })
 
 export default router;
