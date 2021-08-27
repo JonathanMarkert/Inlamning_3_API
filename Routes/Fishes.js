@@ -24,7 +24,9 @@ router.get('/', (req, res) => {
 })
 
 router.post('/', (req, res)=> {
-    console.log('Post Route reached')
+    console.log('Post Route reached');
+
+    res.send('Post Route reached');
 })
 
 export default router;
