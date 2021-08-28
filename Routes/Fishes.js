@@ -4,9 +4,7 @@ import { getFishes, getFishById, createFish, deleteFish, updateFish } from '../c
 
 const router = express.Router();
 
-let fishes =[
-    
-]
+
 
 router.get('/', getFishes);
 
