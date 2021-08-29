@@ -5,7 +5,6 @@ import { getFishes, getFishById, createFish, deleteFish, updateFish } from '../c
 const router = express.Router();
 
 
-
 router.get('/', getFishes);
 
 router.get('/:id', getFishById);
