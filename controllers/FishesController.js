@@ -53,7 +53,7 @@ export const deleteFish = (req, res) => {
           const fishDataToWrite = JSON.stringify(fishDataCurated, null, 2);
           fs.writeFile('fishDB.json', fishDataToWrite, (err)=> {
               if (err) console.log(err)
-              else res.send(`Fish with id ${id} is deleted from the database.`);
+              else res.status(200).send(`Fish with id ${id} is deleted from the database.`);
               
           })
       }
@@ -75,7 +75,7 @@ export const updateFish = (req, res) => {
             const fishDataToWrite = JSON.stringify(fishData, null, 2);
             fs.writeFile('fishDB.json', fishDataToWrite, (err)=> {
                 if (err) console.log(err);
-                else res.send(`Fish with id ${id} has been updated.`);
+                else res.status(200).send(`Fish with id ${id} has been updated.`);
             })
         }
     })
