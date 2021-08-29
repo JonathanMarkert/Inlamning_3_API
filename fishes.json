@@ -25,7 +25,13 @@
   },
   {
     "id": "4d1fbd76-c5ac-469b-bcec-419af97973d1",
-    "type": "Pike",
+    "type": "Salmon",
+    "lengthInCentimeters": 105,
+    "weightInKilos": 8
+  },
+  {
+    "id": "f85f2fc9-4011-48b2-8496-8cfb388b531c",
+    "type": "Trout",
     "lengthInCentimeters": 105,
     "weightInKilos": 8
   }
