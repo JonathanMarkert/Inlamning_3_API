@@ -1,0 +1,32 @@
+[
+  {
+    "id": "87014e9b-0435-4547-b1a5-681dccb84cd5",
+    "type": "Pike",
+    "lengthInCentimeters": 125,
+    "weightInKilos": 13
+  },
+  {
+    "id": "157ef71c-2703-4d9b-8121-606a168f5424",
+    "type": "Pike",
+    "lengthInCentimeters": 127,
+    "weightInKilos": 15
+  },
+  {
+    "id": "16ec56a0-69df-4915-8a71-30fcdbd541f7",
+    "type": "Pearch",
+    "lengthInCentimeters": 43,
+    "weightInKilos": 1.22
+  },
+  {
+    "id": "75348794-cd2d-4585-8981-47909caa2cb2",
+    "type": "Pearch",
+    "lengthInCentimeters": 45,
+    "weightInKilos": 1.4
+  },
+  {
+    "id": "4d1fbd76-c5ac-469b-bcec-419af97973d1",
+    "type": "Pike",
+    "lengthInCentimeters": 105,
+    "weightInKilos": 8
+  }
+]

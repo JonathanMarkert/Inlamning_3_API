@@ -1,20 +1,18 @@
 import express from 'express';
-import {v4 as uuidv4} from 'uuid';
+
+import { getFishes, getFishById, createFish, deleteFish, updateFish } from '../controllers/FishesController.js';
 
 const router = express.Router();
 
-const fishes =[
-    
-]
 
-router.get('/', (req, res) => {
-    res.send(fishes);
-})
+router.get('/', getFishes);
 
-router.post('/', (req, res)=> {    
-    const fish = req.body;
-    fishes.push({ id: uuidv4(),...fish })
-    res.send(`Fish of type: ${fish.type} added to database.`)
-})
+router.get('/:id', getFishById);
+
+router.post('/', createFish);
+
+router.delete('/:id', deleteFish);
+
+router.patch('/:id', updateFish);
 
 export default router;
