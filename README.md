@@ -1,10 +1,24 @@
-# Inlamning_3_API
-Inlämning 3 Webutveckling
+# Inlamning_3_API Webutveckling
 
 ## Filer och mappar
 Server.js
-    
+    serverfil, importerar routes from Fishes.js och kör på port 5000.
+    Startar med npm start commandot
 
+fishDB.json
+    agerar databas och ersatte in-memory databasen
+
+Routes/Fishes.js
+    sköter routing och importerar funktioner från FishesController
+
+Controllers/FishesController.js
+    sköter logik för CRUD-funktioner. Skriver till och läser från fishDB.json
+
+## GIthub
+https://github.com/JonathanMarkert/Inlamning_3_API
+## övrigt
+Jag har gjort alla kontroller via Postman
+Tiden räckte inte till för att göra ett enkelt klient-gränssnitt
 
 ### Krav för godkänt:
 1. Projektet innehåller minst 4 st. endpoints (GET, POST, PUT & DELETE för en resurs) ***Done***
@@ -13,7 +27,6 @@ Server.js
 4. Git & GitHub har använts  ***Done***
 5. Projektmappen innehåller en README.md fil - (läs ovan för mer info)  ***Done***
 6. Uppgiften lämnas in i tid!  ***Done***
-
 
 ### Krav för väl godkänt:
 1. Alla punkter för godkänt är uppfyllda  ***Done***
