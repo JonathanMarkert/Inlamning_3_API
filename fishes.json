@@ -34,5 +34,11 @@
     "type": "Trout",
     "lengthInCentimeters": 105,
     "weightInKilos": 8
+  },
+  {
+    "id": "6d0ae2f2-b7fc-4aec-954b-5a7bc1032dc6",
+    "type": "Trout",
+    "lengthInCentimeters": 111,
+    "weightInKilos": 11
   }
 ]
